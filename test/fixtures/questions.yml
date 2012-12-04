@@ -1,0 +1,37 @@
+# == Schema Information
+#
+# Table name: questions
+#
+#  id          :integer          not null, primary key
+#  year        :integer
+#  exam        :integer
+#  subject     :integer
+#  number      :integer
+#  answer      :integer
+#  explanation :string(255)
+#  img         :string(255)
+#  created_at  :datetime         not null
+#  updated_at  :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  year: 1
+  exam: 1
+  subject: 1
+  number: 1
+  solution: 1
+  img: MyString
+  explanation: MyString
+  passage: MyString
+
+two:
+  year: 1
+  exam: 1
+  subject: 1
+  number: 1
+  solution: 1
+  img: MyString
+  explanation: MyString
+  passage: MyString

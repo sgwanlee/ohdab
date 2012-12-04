@@ -1,0 +1,20 @@
+<%= render 'topbar' %>
+
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span2">
+      <%= render 'select_exam' %>
+    </div><!--/span-->
+    <div class="span10">
+      <div class="row-fluid">
+
+        <%= render 'enter_answers' %>
+
+        <%= render 'exam_img_explanation' %>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<%= debug(params) if Rails.env.development? %>

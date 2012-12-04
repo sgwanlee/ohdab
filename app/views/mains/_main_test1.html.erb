@@ -1,0 +1,81 @@
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">Ohdab Note</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span2">
+          <div class="well ">
+            <ul class="nav nav-list" id="year">
+              <li class="nav-header">연도 선택</li>
+              <li class="active"><a href="#">2012 <i class="icon-ok"></i></a></li>
+              <li><a href="#">2011</a></li>
+              <li><a href="#">2010</a></li>
+            </ul>
+            <ul class="nav nav-list" id="exam">
+              <li class="nav-header">시험 선택</li>
+              <li class = "active"><a href="#">3월 <i class="icon-ok"></i></a></li>
+              <li><a href="#">4월</a></li>
+              <li><a href="#">6월</a></li>
+              <li><a href="#">7월</a></li>
+              <li><a href="#">9월</a></li>
+              <li><a href="#">10월</a></li>
+              <li><a href="#">11월</a></li>
+            </ul>
+            <ul class="nav nav-list" id="subject">
+              <li class="nav-header">과목 선택</li>
+              <li><a href="#">언어</a></li>
+              <li class="active"><a href="#">수리가 <i class="icon-ok"></i></a></li>
+              <li><a href="#">수리나</a></li>
+              <li><a href="#">외국어</a></li>
+            </ul>
+          </div><!--/.well -->
+        </div><!--/span-->
+        <div class="span10">
+          <div class="row-fluid">
+            <div class="span2" id="answers">
+              <div class="well">
+                
+                <form action="">
+                  <% 50.times do |i| %>
+                  <input type="text" class="input-mini" maxlength=1 placeholder="1">
+                  <% end %>
+                  <button type="" class="btn pull-left" id="answer_done">입력완료</button>
+                </form>
+              </div>
+              <div class="well">
+                <form action="">
+                  <button type="submit" class="btn">PDF DownLoad</button>
+                </form>
+              </div>
+            </div><!--/span-->
+            <div class="span8" id="note">
+              <div class="well well-small">
+                <div class="row-fluid">
+                  <div class="span6" id="exam_img"><%= image_tag "exam.gif" %></div>
+                  <div class="span6" id="exam_answer">
+                    <%= Faker::Lorem.sentence(1) %>
+                    <br><br>
+                    <%= Faker::Lorem.sentence(55) %>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>

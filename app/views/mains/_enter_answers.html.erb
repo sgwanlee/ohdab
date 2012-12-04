@@ -1,0 +1,23 @@
+<div class="span2" id="answers">
+  <div class="well">
+
+
+    <%= form_tag '/mains' do %>
+      <% 2.times do |i| %>
+        <%= text_field_tag "answers[]", nil, id: "#{i}", class: "input-mini", maxlength: "1", placeholder: "1" %>
+      <% end %>
+      <%= button_tag "입력완료", type: "submit", class: "btn pull-left"%>
+    <% end %>
+
+   <!--  <form action="/" method="post">
+      <input type="text" name="answers[]" class="input-mini" maxlength=1 placeholder="1">
+      <input type="text" name="answers[]" class="input-mini" maxlength=1 placeholder="1">      
+      <button type="submit" class="btn pull-left" id="answer_done">입력완료</button>
+    </form>     -->
+  </div>
+  <div class="well">
+    <form action="">
+      <button type="submit" class="btn">PDF DownLoad</button>
+    </form>
+  </div>
+</div><!--/span-->
